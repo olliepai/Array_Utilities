@@ -18,10 +18,7 @@ public class NumberMatrix {
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 
 		
-		matrix[0][0] = 12;	matrix[0][1] = 1;	matrix[0][2] = 2;	matrix[0][3] = 3;
-		matrix[1][0] = 4;	matrix[1][1] = 5;	matrix[1][2] = 6;	matrix[1][3] = 7;
-		matrix[2][0] = 8;	matrix[2][1] = 9;	matrix[2][2] = 10;	matrix[2][3] = 11;
-		matrix[3][0] = 12;	matrix[3][1] = 13;	matrix[3][2] = 14;	matrix[3][3] = 15;
+		
 		
 	}
 	
@@ -33,10 +30,7 @@ public class NumberMatrix {
 	 */
 	public void rotateMatrix()
 	{ /* to be implemented in part (c) */ 
-		matrix[0][0] = 16;	matrix[0][1] = 1;	matrix[0][2] = 2;	matrix[0][3] = 3;
-		matrix[1][0] = 4;	matrix[1][1] = 5;	matrix[1][2] = 6;	matrix[1][3] = 7;
-		matrix[2][0] = 8;	matrix[2][1] = 9;	matrix[2][2] = 10;	matrix[2][3] = 11;
-		matrix[3][0] = 12;	matrix[3][1] = 13;	matrix[3][2] = 14;	matrix[3][3] = 15;
+		
 	}
 	
 	// There may be instance variables, constructors, and methods that are not
