@@ -17,9 +17,28 @@ public class NumberMatrix {
 	 */	
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 
+		System.out.println("print");
+		for (int i = matrix.length - 1; i > 0; i--) {
+			for (int j = matrix[i].length - 1; j >= 0; j--) {
+				if (j > 0) {
+					matrix[i][j] = matrix[i][j-1];
+				} else {
+					matrix [i][j] = matrix [i - 1][matrix[i].length - 1];
+				}
+			}
+		}
 		
+		for (int i = matrix[0].length - 1; i > 0; i--) {
+			matrix[0][i] = matrix[0][i - 1];
+		}
 		
+		matrix[0][0] = num;
 		
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.println(matrix[i][j]);
+			}
+		}
 	}
 	
 	/**Rotates each matrix element to the next higher position in row-major 
@@ -30,7 +49,8 @@ public class NumberMatrix {
 	 */
 	public void rotateMatrix()
 	{ /* to be implemented in part (c) */ 
-		
+		int num = matrix[matrix.length - 1][matrix[0].length - 1];
+		shiftMatrix(num);
 	}
 	
 	// There may be instance variables, constructors, and methods that are not
